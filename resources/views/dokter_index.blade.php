@@ -32,6 +32,7 @@
                                     @endif
                                     <div class="col-md-8">
                                         <div>Nama: {{ $item->nama_dokter }}</div>
+                                        <div>Kampus: {{ $item->kampus }}</div>
                                         <div>Spesialis: {{ $item->spesialis }}</div>
                                         <div>Nomor HP: {{ $item->nomor_hp }}</div>
                                         <div>Username: <strong>{{ $item->nomor_hp }}@dokter.com</strong></div>

@@ -34,9 +34,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                        <img class="img-fluid" src="/sbadmin2/img/logo.png" alt="">
                 </div>
-                <div class="sidebar-brand-text mx-1">{{ env('APP_NAME') }}</div>
+                <div class="sidebar-brand-text mx-1">Kalisari Healthcare</div>
             </a>
 
             <!-- Divider -->

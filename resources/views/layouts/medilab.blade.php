@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medilab </title>
+    <title>klinik Kalisari</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="/medilab/assets/img/favicon.png" rel="icon">
-    <link href="/medilab/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/medilab/assets/img/logo.png" >
+    <link href="/medilab/assets/img/logo.png" >
 
     <!-- Google Fonts -->
     <link
@@ -46,13 +46,13 @@
     <div id="topbar" class="d-flex align-items-center fixed-top">
         <div class="container d-flex justify-content-between">
             <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-                <i class="bi bi-phone"></i> +1 5589 55488 55
+                <i class="bi bi-envelope"></i> <a href="mailto:kalisarihealthcare@gmail.com">kalisarihealthcare@gmail.com</a>
+                <i class="bi bi-phone"></i>0822 9999 6577
             </div>
             <div class="d-none d-lg-flex social-links align-items-center">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/kalisarihealthcare/" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
             </div>
         </div>
@@ -62,7 +62,9 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1>
+            <h1 class="logo me-auto"><a href="#">
+                <img src="medilab/assets/img/logo.png" alt="Kalisari Logo" class="img-fluid" style="height: 100px; margin-right: 10px;">
+               <span style="letter-spacing: 5px"> Kalisari </span><h5 style="weight: 10px; margin-left: 57px">Health Care</h5></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="/medilab/assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -87,9 +89,9 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
-            <h1>Welcome to Medilab</h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <h1>Welcome to KalisariHealtCare</h1>
+            <h2>KLINIK PRATAMA SAHABAT KELUARGA</h2>
+            <a href="#about" class="btn-get-started scrollto">Booking</a>
         </div>
     </section><!-- End Hero -->
 
@@ -102,12 +104,14 @@
                 <div class="row">
                     <div class="col-lg-4 d-flex align-items-stretch">
                         <div class="content">
-                            <h3>Why Choose Medilab?</h3>
+                            <h3>Why Choose Klinik Kalisari?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
-                                optio ad corporis.
+                                Klinik Pratama Kalisari Healthcare (KHC) sebagai penyelenggara layanan
+                                kesehatan yang berdedikasi, kami hadir dengan misi utama untuk memberikan
+                                pelayanan kesehatan yang prima dengan konsep kenyamanan dalam berobat
+                                dan harga yang terjangkau. Kami percaya bahwa akses terhadap pelayanan
+                                kesehatan berkualitas tidak seharusnya menjadi beban finansial yang berat bagi
+                                masyarakat
                             </p>
                             <div class="text-center">
                                 <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -120,27 +124,27 @@
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-receipt"></i>
-                                        <h4>Corporis voluptates sit</h4>
-                                        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
-                                            aliquip</p>
+                                        
+                                        <p>Memberikan pelayanan kesehatan yang terjangkau, berkualitas
+                                            dan komprehensif kepada masyarakat</p>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-cube-alt"></i>
-                                        <h4>Ullamco laboris ladore pan</h4>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt</p>
+                                        
+                                        <p>Edukasi kesehatan dan pencegahan penyakit melalui program
+                                            promosi kesehatan</p>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-images"></i>
-                                        <h4>Labore consequatur</h4>
-                                        <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis
-                                            facere</p>
+                                        <p>Menjalin kerjasama dengan mitra dan pihak terkait untuk
+                                            meningkatkan aksesibilitas layanan kesehatan</p>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div><!-- End .content-->
                     </div>
@@ -212,7 +216,7 @@
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                             <div class="icon-box">
                                 <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                                <h4><a href="">Poli {{ $item->nama }}</a></h4>
+                                <h4><a href=""> {{ $item->nama }}</a></h4>
                                 <p>{{ $item->deskripsi }}</p>
                             </div>
                         </div>
@@ -246,8 +250,8 @@
                                 </div>
                                 <div class="member-info">
                                     <h4>{{ $item->nama_dokter }}</h4>
-                                    <span>Spesialis {{ $item->spesialis }}</span>
-                                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                    <span>Dokter {{ $item->spesialis }}</span>
+                                    <p>{{ $item->kampus }}</p>
                                     <div class="social">
                                         <a href="{{ $item->twitter }}"><i class="ri-twitter-fill"></i></a>
                                         <a href="{{ $item->facebook }}"><i class="ri-facebook-fill"></i></a>
@@ -494,8 +498,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-1.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery1.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery1.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -503,8 +507,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-2.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery2.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery2.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -512,8 +516,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-3.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery3.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery3.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -521,8 +525,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-4.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery4.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery4.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -530,8 +534,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-5.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery5.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery5.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -539,8 +543,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-6.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery6.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery6.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -548,8 +552,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-7.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery7.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery7.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -557,8 +561,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="/medilab/assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
-                                <img src="/medilab/assets/img/gallery/gallery-8.jpg" alt=""
+                            <a href="/medilab/assets/img/gallery/galery8.jpg" class="galelry-lightbox">
+                                <img src="/medilab/assets/img/gallery/galery8.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -595,19 +599,19 @@
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <p>Jl.Kalisari No.20.Kel. Kalisari Kec.Pasar Rebo - Jakarta Timur</p>
                             </div>
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@example.com</p>
+                                <p>kalisarihealthcare@gmail.com</p>
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
+                                <p>0822 9999 6577</p>
                             </div>
 
                         </div>
@@ -659,13 +663,13 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Medilab</h3>
+                        <h3>KalisariHealtCare</h3>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Jl.Kalisari No.20.Kel. Kalisari<br>
+                            Kec.Pasar Rebo<br>
+                            Jakarta Timur <br><br>
+                            <strong>Phone:</strong> 0822 9999 6577<br>
+                            <strong>Email:</strong> kalisarihealthcare@gmail.com<br>
                         </p>
                     </div>
 
@@ -682,18 +686,20 @@
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                        </ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Poli Umum</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Poli Gigi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Poli KIA</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Periksa Hamil</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Laboratorium</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Sunat Modern</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Vaksinasi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">HomeCare</a></li>
+                      </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Jam Operasional</h4>
+                        <p>Senin - Sabtu</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -707,20 +713,20 @@
 
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Kalisari</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->
                     <!-- You can delete the links only if you purchased the pro version. -->
                     <!-- Licensing information: https://bootstrapmade.com/license/ -->
                     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    Designed by <a href="https://bootstrapmade.com/">ulyanaf</a>
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.instagram.com/kalisarihealthcare/" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>

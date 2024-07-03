@@ -13,6 +13,12 @@
                         value="{{ $dokter->nama_dokter ?? old('nama_dokter') }}">
                     <span class="text-danger">{{ $errors->first('nama_dokter') }}</span>
                 </div>
+                <div class="form-group mt-1">
+                    <label for="kampus">Kuliah Dokter</label>
+                    <input class="form-control" type="text" name="kampus"
+                        value="{{ $dokter->kampus ?? old('kampus') }}">
+                    <span class="text-danger">{{ $errors->first('kampus') }}</span>
+                </div>
                 <div class="form-group mt-3">
                     <label for="foto">Foto Dokter</label>
                     <input class="form-control" type="file" name="foto" value="{{ old('foto') }}">
@@ -24,11 +30,8 @@
                 <div class="form-group mt-3">
                     <label for="spesialis">Spesialis</label>
                     <select name="spesialis" class="form-control">
-                        <option value="mata" @selected($dokter->spesialis == 'mata')> Spesialis Mata</option>
-                        <option value="tht" @selected($dokter->spesialis == 'tht')> Spesialis THT</option>
-                        <option value="jantung" @selected($dokter->spesialis == 'jantung')>
-                            Spesialis Jantung
-                        </option>
+                        <option value="umum" @selected($dokter->spesialis == 'umum')>Dokter Umum</option>
+                        <option value="gigi" @selected($dokter->spesialis == 'gigi')>Dokter Gigi</option>
                         <option value="paru" @selected($dokter->spesialis == 'paru')> Spesialis Paru </option>
                     </select>
                     <span class="text-danger">{{ $errors->first('spesialis') }}</span>

@@ -12,17 +12,21 @@
                     <input class="form-control" type="text" name="nama_dokter" value="{{ old('nama_dokter') }}" autofocus>
                     <span class="text-danger">{{ $errors->first('nama_dokter') }}</span>
                 </div>
+                <div class="form-group mt-1">
+                    <label for="kampus">Kampus Dokter</label>
+                    <input class="form-control" type="text" name="kampus" value="{{ old('kampus') }}" autofocus>
+                    <span class="text-danger">{{ $errors->first('kampus') }}</span>
+                </div>
                 <div class="form-group mt-3">
                     <label for="foto">Foto Dokter</label>
                     <input class="form-control" type="file" name="foto" value="{{ old('foto') }}">
                     <span class="text-danger">{{ $errors->first('foto') }}</span>
                 </div>
                 <div class="form-group mt-3">
-                    <label for="spesialis">Spesialis</label>
+                    <label for="Dokter">Dokter</label>
                     <select name="spesialis" class="form-control">
-                        <option value="mata" @selected(old('spesialis') == 'mata')> Spesialis Mata</option>
-                        <option value="tht" @selected(old('spesialis') == 'tht')> Spesialis THT</option>
-                        <option value="jantung" @selected(old('spesialis') == 'jantung')> Spesialis Jantung</option>
+                        <option value="Umum" @selected(old('spesialis') == 'Umum')> Dokter umum</option>
+                        <option value="Gigi" @selected(old('spesialis') == 'Gigi')> Dokter Gigi</option>
                         <option value="paru" @selected(old('spesialis') == 'paru')> Spesialis Paru</option>
                     </select>
                     <span class="text-danger">{{ $errors->first('spesialis') }}</span>

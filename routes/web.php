@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\AdministrasiController;
 use App\Http\Controllers\DokterController;
 use App\Http\Controllers\LaporanAdmController;
@@ -43,6 +44,10 @@ Route::middleware(Authenticate::class)->group(function () {
     Route::get('laporan/administrasi', [LaporanAdmController::class, 'index'])->name('laporan.adm');
 });
 
+
+// Routes for different dashboards based on roles
+
+
 //membuat route logout
 Route::get('logout', function () {
     Auth::logout();
@@ -51,5 +56,5 @@ Route::get('logout', function () {
 
 Auth::routes([
     //menghilangkan fungsi register di halaman login
-    'register' => false
+    'register' => true
 ]);

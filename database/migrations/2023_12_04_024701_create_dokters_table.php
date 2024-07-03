@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('user_id');
             $table->string('kode_dokter');
             $table->string('nama_dokter');
+            $table->string('kampus');
             $table->string('foto')->nullable();
             $table->string('spesialis');
             $table->string('nomor_hp');

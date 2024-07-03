@@ -30,7 +30,7 @@
                     <label for="dokter_id">Pilih Dokter</label>
                     <select name="dokter_id" class="form-control">
                         @foreach ($list_dokter as $item)
-                            <option value="{{ $item->id }}" @selected($item->id == $poli->dokter_id) )>
+                            <option value="{{ $item->id }}" @selected($item->id == $poli->dokter_id)>
                                 {{ "{$item->nama_dokter} - Spesialis {$item->spesialis}" }}
                             </option>
                         @endforeach

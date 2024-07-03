@@ -32,6 +32,7 @@ class DokterController extends Controller
     {
         $validasiData = $request->validate([
             'nama_dokter' => 'required',
+            'kampus' => 'required',
             'spesialis' => 'required',
             'password' => 'required',
             'nomor_hp' => 'required|numeric|unique:dokters,nomor_hp',
@@ -69,6 +70,7 @@ class DokterController extends Controller
             $dokter->user_id = $user->id;
             $dokter->kode_dokter = $kode;
             $dokter->nama_dokter = $request->nama_dokter;
+            $dokter->kampus = $request->kampus;
             $dokter->spesialis = $request->spesialis;
             $dokter->nomor_hp = $request->nomor_hp;
             $dokter->twitter = $request->twitter;
@@ -118,6 +120,7 @@ class DokterController extends Controller
     {
         $validasiData = $request->validate([
             'nama_dokter' => 'required',
+            'kampus'    =>'required',
             'spesialis' => 'required',
             'nomor_hp' => 'required',
             'twitter' => 'required',
