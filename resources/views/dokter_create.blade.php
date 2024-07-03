@@ -20,7 +20,7 @@
                 <div class="form-group mt-3">
                     <label for="spesialis">Spesialis</label>
                     <select name="spesialis" class="form-control">
-                        <option value="mata" @selected(old('spesialis') == 'mata')> Spesialis Mata</option>
+                        <option value="mata" @selected(old('spesialis') == 'mata')> Spesialis Gigi</option>
                         <option value="tht" @selected(old('spesialis') == 'tht')> Spesialis THT</option>
                         <option value="jantung" @selected(old('spesialis') == 'jantung')> Spesialis Jantung</option>
                         <option value="paru" @selected(old('spesialis') == 'paru')> Spesialis Paru</option>
