@@ -73,7 +73,7 @@
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
-                    <li><a class="nav-link scrollto" href="/login">Login Admin</a></li>
+                    <li><a class="nav-link scrollto" href="/login">Login</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -89,7 +89,7 @@
         <div class="container">
             <h1>Welcome to KalisariHealtCare</h1>
             <h2>KLINIK PRATAMA SAHABAT KELUARGA</h2>
-            <a href="#about" class="btn-get-started scrollto">Booking</a>
+            <a href="#appointment" class="btn-get-started scrollto">Booking</a>
         </div>
     </section><!-- End Hero -->
 
@@ -229,9 +229,7 @@
 
                 <div class="section-title">
                     <h2>Doctors</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Klinik kami siap melayani anda dengan dokter-dokter yang profesional</p>
                 </div>
 
                 <div class="row">
@@ -272,9 +270,7 @@
 
                 <div class="section-title">
                     <h2>REGISTRASI PASIEN</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Silahkan melakukan REGISTRASI terlebih dahulu</p>
                 </div>
                 @include('flash::message')
                 @yield('content')
@@ -677,8 +673,6 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
                         </ul>
                     </div>
 
