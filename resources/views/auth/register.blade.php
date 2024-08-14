@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card" style="background-color:  hsl(195, 82%, 89%), 82%, 89%)">
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
@@ -29,7 +29,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="nama@gmail.com">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">

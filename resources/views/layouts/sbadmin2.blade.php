@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{ env('APP_NAME') }}</title>
+    <title>{{ config('app.name', 'KalisariHealthCare') }}</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('sbadmin2') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +57,7 @@
             @endif
             <li class="nav-item {{ Route::is('profil.*') ? 'active' : '' }} ">
                 <a class="nav-link" href="/profil/create">
-                    <i class="fas fa-fw fa-cogs"></i>
+                    <i class="fas fa-fw fa-user"></i>
                     <span>Profil</span></a>
             </li>
 
@@ -69,13 +69,15 @@
                 </li>
             @endif
 
+
+
             <!-- Nav Item - Pages Collapse Menu -->
             @if (auth()->user()->role == 'admin')
                 <!-- Divider -->
                 <hr class="sidebar-divider">
                 <!-- Heading -->
                 <div class="sidebar-heading">
-                    Data Master
+                    Data Utama
                 </div>
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -105,10 +107,10 @@
                                 href="/poli/create">Tambah Poli</a>
                             <a class="collapse-item {{ Route::is('poli.index') ? 'active' : '' }}" href="/poli">
                                 Data Poli</a>
-                            <h6 class="collapse-header">Data Obat:</h6>
+                            {{-- <h6 class="collapse-header">Data Obat:</h6>
                             <a class="collapse-item" href="/obat/create">Tambah Obat</a>
                             <a class="collapse-item" href="/obat">
-                                Data Obat</a>
+                                Data Obat</a> --}}
                         </div>
                     </div>
                 </li>
@@ -120,7 +122,7 @@
                 <li class="nav-item {{ Route::is('administrasi.index') ? 'active' : '' }} ">
                     <a class="nav-link" href="/administrasi">
                         <i class="fas fa-fw fa-cogs"></i>
-                        <span>Data Administrasi</span>
+                        <span>E-Rekam Medik</span>
                     </a>
                 </li>
                 <li class="nav-item {{ Route::is('administrasi.create') ? 'active' : '' }} ">
@@ -129,6 +131,8 @@
                         <span>Tambah Administrasi</span>
                     </a>
                 </li>
+                
+    
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                         aria-expanded="true" aria-controls="collapseUtilities">
@@ -147,7 +151,13 @@
                     </div>
                 </li> --}}
             @endif
-
+            @unless(in_array(auth()->user()->role, ['dokter', 'admin', 'operator']))
+            <li class="nav-item {{ Route::is('registrasipasien/create') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('/registrasipasien/create') }}">
+                
+            </a>
+        </li>
+    @endunless
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -202,7 +212,7 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
+                    {{-- <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small"
@@ -213,7 +223,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form> --}}
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -269,7 +279,7 @@
                                             <div class="small text-gray-500">{{ $item->tanggal->format('d F Y') }}
                                             </div>
                                             <span class="font-weight-bold">{{ $item->pasien->nama_pasien }} berobat ke
-                                                poli {{ $item->poli }}</span>
+                                                 {{ $item->poli }}</span>
                                         </div>
                                     </a>
                                 @empty
@@ -305,7 +315,7 @@
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="/profil/create">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
+                                    Profil
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/logout">
@@ -337,7 +347,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; KlinikKalisariHealthCare 2024</span>
                     </div>
                 </div>
             </footer>

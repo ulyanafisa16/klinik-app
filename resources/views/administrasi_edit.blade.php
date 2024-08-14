@@ -40,10 +40,10 @@
                     <dt class="col-sm-3">Dokter</dt>
                     <dd class="col-sm-9">: {{ $administrasi->dokter->nama_dokter }}</dd>
                 </dl>
-                <dl class="row">
+                {{-- <dl class="row">
                     <dt class="col-sm-3">Biaya</dt>
                     <dd class="col-sm-9">: Rp. {{ number_format($administrasi->biaya, 0, ',', '.') }}</dd>
-                </dl>
+                </dl> --}}
                 <dl class="row">
                     <dt class="col-sm-3">Keluhan</dt>
                     <dd class="col-sm-9">: {{ $administrasi->keluhan }}</dd>
@@ -53,6 +53,7 @@
                     <textarea name="diagnosis" rows="3" class="form-control" autofocus>{{ $administrasi->diagnosis }}</textarea>
                     <span class="text-danger">{{ $errors->first('diagnosis') }}</span>
                 </div>
+
                 <button type="submit" class="btn btn-primary">SIMPAN</button>
         </div>
     </div>

@@ -107,6 +107,18 @@ h6 {
   padding: 20px !important;
 }
 
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #6b6d7d;
+  border-color: #656776;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(151, 153, 166, 0.5);
+}
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -198,10 +210,10 @@ h6 {
 */
 .appointment-btn {
   margin-left: 25px;
-  background: #1977cc;
+  background: #80b0da;
   color: #fff;
-  border-radius: 50px;
-  padding: 8px 25px;
+  border-radius: 80px;
+  padding: 10px 30px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
@@ -906,7 +918,8 @@ section {
 .counts .count-box span {
   font-size: 36px;
   display: block;
-  font-weight: 600;
+  text-align: center;
+  font-weight: 400;
   color: #082744;
 }
 
@@ -914,7 +927,7 @@ section {
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------

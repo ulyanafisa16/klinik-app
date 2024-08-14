@@ -11,7 +11,7 @@ class PoliController extends Controller
      */
     public function index()
     {
-        $data['poli'] = \App\Models\Poli::latest()->paginate(10);
+        $data['poli'] = \App\Models\Poli::with('dokter')->latest()->paginate(10);
         $data['judul'] = 'Data-data Poli';
         return view('poli_index', $data);
     }

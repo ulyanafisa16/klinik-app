@@ -58,11 +58,15 @@
                     </div>
                 </div>
                 <div class="form-group mt-3">
+                    <label for="alamat">NIK</label>
+                    <input type="text" name="nik" class="form-control" value="{{ old('nik') }}" required>
+                    <span class="text-danger">{{ $errors->first('nik') }}</span>
+                </div>
+                <div class="form-group mt-3">
                     <label for="alamat">Alamat</label>
                     <textarea name="alamat" rows="3" class="form-control">{{ old('alamat') }}</textarea>
                     <span class="text-danger">{{ $errors->first('alamat') }}</span>
                 </div>
-
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">SIMPAN</button>
                 </div>

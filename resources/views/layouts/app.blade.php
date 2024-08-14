@@ -18,20 +18,24 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body>
+<body style="background-image: url('/medilab/assets/img/klinik2.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center; @media only screen and (max-width: 600px) {
+  body {
+    background-attachment: scroll; 
+  }
+}">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+        <nav class="navbar navbar-expand-md navbar-light bg-primer shadow-sm" style="background:transparant; height: 80px;">
+            <div class="container" >
+                <a class="navbar-brand" href="{{ url('/') }}" style="color:white">
+                    {{ config('app.name', 'KalisariHealthCare') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}" style="color: aliceblue font-size: 1.25rem; padding: 0.75rem 1rem;">
+                    <span class="navbar-toggler-icon" style="width: 2rem; height:2rem; background-color:aliceblue; display:inline-block;"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         @auth
@@ -53,13 +57,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link"style="color: aliceblue" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" style="color: aliceblue" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else

@@ -41,6 +41,7 @@ class RegistrasiPasienController extends Controller
             'alamat' => 'required',
             'keluhan' => 'required',
             'tanggal' => 'required',
+            'nik'    => 'required|digits:16|unique:pasiens,nik',
             'poli_id' => 'required|exists:polis,id',
         ]);
         \DB::beginTransaction();
@@ -58,6 +59,7 @@ class RegistrasiPasienController extends Controller
         $pasien->status = $request->status;
         $pasien->alamat = $request->alamat;
         $pasien->nomor_hp = $request->nomor_hp;
+        $pasien->nik  = $request->nik;
         $pasien->save();
         //cek kode adm terakhir
         $kodeAdm = \App\Models\Administrasi::orderBy('id', 'desc')->first();

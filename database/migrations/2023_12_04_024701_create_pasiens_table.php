@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('nomor_hp')->nullable();
             $table->string('status');
             $table->string('alamat');
+            $table->string('niku')->unique();
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
         });

@@ -13,6 +13,11 @@
                     <input type="date" name="tanggal" class="form-control" value="{{ old('tanggal') ?? date('Y-m-d') }}">
                     <span class="text-danger">{{ $errors->first('tanggal') }}</span>
                 </div>
+                <div class="form-group mt-3">
+                    <label for="alamat">NIK</label>
+                    <input type="text" name="nik" class="form-control" value="{{ old('nik') }}" required>
+                    <span class="text-danger">{{ $errors->first('nik') }}</span>
+                </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label for="pasien_id">Pilih Pasien atau <a href="/pasien/create" target="blank">Buat
@@ -31,8 +36,7 @@
                         <select name="poli_id" id="poli_id" class="form-control">
                             @foreach ($list_poli as $item)
                                 <option value="{{ $item->id }}" @selected(old('poli_id') == $item->id)>
-                                    Poli {{ $item->nama }} - Biaya
-                                    {{ number_format($item->biaya, 0, ',', '.') }}
+                                    Poli {{ $item->nama }} 
                                 </option>
                             @endforeach
                         </select>

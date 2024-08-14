@@ -9,7 +9,7 @@
                     <tr>
                         <th width="1%">ID</th>
                         <th>Nama Poli</th>
-                        <th width="15%">Biaya</th>
+                        {{-- <th width="15%">Biaya</th> --}}
                         <th width="16%">Aksi</th>
                     </tr>
                 </thead>
@@ -19,10 +19,10 @@
                             <td>{{ $item->id }}</td>
                             <td>
                                 <div>Nama Poli: <b>{{ $item->nama }}</b></div>
-                                <div>Nama Dokter: <b>{{ $item->nama_dokter }}</b></div>
+                                <div> <b>{{ $item->nama_dokter }}</b></div>
                                 <div>Deskripsi: {{ $item->deskripsi }}</div>
                             </td>
-                            <td>Rp. {{ number_format($item->biaya, 0, ',', '.') }}</td>
+                            {{-- <td>Rp. {{ number_format($item->biaya, 0, ',', '.') }}</td> --}}
                             <td>
                                 <a href="/poli/{{ $item->id }}/edit" class="btn btn-primary">
                                     Edit

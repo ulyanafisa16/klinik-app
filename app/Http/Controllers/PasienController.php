@@ -3,12 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Pasien;
 class PasienController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    public function cetakPasien($id)
+    {
+        $pasien = Pasien::findOrFail($id);
+        return view('cetak_kartu',compact('pasien'));
+    }
+
+
     public function index()
     {
         $cari = request('q');
@@ -43,6 +50,7 @@ class PasienController extends Controller
             'status' => 'required',
             'nomor_hp' => 'required',
             'alamat' => 'required',
+            'nik' => 'required',
         ]);
         $kodeQuery = \App\Models\Pasien::orderBy('id', 'desc')->first();
         $kode = 'P0001';
@@ -86,6 +94,7 @@ class PasienController extends Controller
             'jenis_kelamin' => 'required',
             'status' => 'required',
             'nomor_hp' => 'required',
+            'nik' =>'required',
         ]);
         $pasien = \App\Models\Pasien::findOrFail($id);
         $pasien->fill($validasiData);

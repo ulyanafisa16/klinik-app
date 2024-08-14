@@ -106,6 +106,7 @@ class DokterController extends Controller
         $data['list_sp'] = [
             'Umum' => 'Umum',
             'Gigi' => 'Gigi',
+            'KIA' => 'KIA',
             'Kandungan' => 'Kandungan',
             'Anak' => 'Anak',
             'Bedah' => 'Bedah',

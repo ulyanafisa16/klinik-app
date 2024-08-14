@@ -15,7 +15,7 @@ class Administrasi extends Model
     public function pasien()
     {
         return $this->belongsTo(Pasien::class)->withDefault([
-            'nama_pasien' => 'Data sudah dihapus',
+            'nik' => 'Data sudah dihapus',
         ]);
     }
 

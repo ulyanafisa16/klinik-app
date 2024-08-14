@@ -40,11 +40,24 @@ class AdministrasiController extends Controller
     public function store(Request $request)
     {
         $validasiData = $request->validate([
-            'pasien_id' => 'required',
+            'pasien_id' => 'required|exists:pasiens,id',
             'poli_id' => 'required',
             'tanggal' => 'required',
             'keluhan' => 'required',
+            'nik'     => 'required',
+            
         ]);
+
+        $pasien = \App\Models\Pasien::where('nik', $request->nik)->first();
+
+    // Jika pasien belum ada, buat pasien baru
+    if (!$pasien) {
+        $pasien = new \App\Models\Pasien();
+        $pasien->nik = $request->nik;
+        // Tambahkan kolom lain sesuai kebutuhan
+        $pasien->save();
+    }
+    
         $poli = \App\Models\Poli::findOrfail($request->poli_id);
         $kodeAdm = \App\Models\Administrasi::orderBy('id', 'desc')->first();
         $kode = 'ADM0001';
@@ -59,6 +72,7 @@ class AdministrasiController extends Controller
         $adm->keluhan = strip_tags($request->keluhan);
         $adm->dokter_id = $poli->dokter_id;
         $adm->biaya = $poli->biaya;
+        $adm->nik = $pasien->nik; 
         $adm->save();
         flash('Data sudah disimpan')->success();
         return back();

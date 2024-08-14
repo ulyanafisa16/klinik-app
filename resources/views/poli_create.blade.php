@@ -13,11 +13,11 @@
                         <input type="text" name="nama" class="form-control" value="{{ old('nama') }}" autofocus />
                         <span class="text-danger">{{ $errors->first('nama') }}</span>
                     </div>
-                    <div class="col-md-6 form-group ">
+                    {{-- <div class="col-md-6 form-group ">
                         <label for="biaya">Biaya</label>
                         <input type="text" name="biaya" class="form-control" value="{{ old('biaya') }}" />
                         <span class="text-danger">{{ $errors->first('biaya') }}</span>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="form-group">
                     <label for="deskripsi">Deskripsi Poli</label>

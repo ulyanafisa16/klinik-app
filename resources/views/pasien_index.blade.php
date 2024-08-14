@@ -25,6 +25,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Kode</th>
+                        <th>Poli</th>
                         <th>Nama</th>
                         <th>Nomor HP</th>
                         <th>Tanggal Buat</th>
@@ -36,6 +37,7 @@
                         <tr>
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->kode_pasien }}</td>
+                            <td>{{ $item->poli }}</td>
                             <td>{{ $item->nama_pasien }}</td>
                             <td>{{ $item->nomor_hp }}</td>
                             <td>{{ $item->created_at }}</td>
@@ -49,6 +51,10 @@
                                     @csrf
                                     <button type="submit" class="btn btn-danger">Hapus</button>
                                 </form>
+                            </form>
+                            <a href="{{ route('cetakPasien', $item->id) }}" class="btn btn-primary">
+                                <i class="fas fa-print"></i>
+                            </a>
                             </td>
                         </tr>
                     @empty

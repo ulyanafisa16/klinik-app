@@ -24,7 +24,7 @@
                             <th>ID</th>
                             <th width="38%">Data Pasien</th>
                             <th>Keluhan</th>
-                            <th>Biaya</th>
+                            {{-- <th>Biaya</th> --}}
                             <th>Status</th>
                             <th width="20%">Aksi</th>
                         </tr>
@@ -37,6 +37,9 @@
                                     <dl class="row">
                                         <dt class="col-md-4">Nama Pasien</dt>
                                         <dd class="col-md-8">: {{ $item->pasien->nama_pasien }}</dd>
+
+                                        <dt class="col-md-4">NIK</dt>
+                                        <dd class="col-md-8">: {{ $item->pasien->nik}}</dd>
 
                                         <dt class="col-md-4">Nomor HP</dt>
                                         <dd class="col-md-8">: {{ $item->pasien->nomor_hp }}</dd>
@@ -56,7 +59,7 @@
                                         {{ $item->diagnosis }}
                                     </div>
                                 </td>
-                                <td>Rp. {{ number_format($item->biaya, 0, ',', '.') }}</td>
+                                {{-- <td>Rp. {{ number_format($item->biaya, 0, ',', '.') }}</td> --}}
                                 <td>
                                     <span
                                         class="badge badge-pill badge-{{ $item->status == 'baru' ? 'primary' : 'success' }}"
